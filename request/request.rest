@@ -1,0 +1,13 @@
+GET http://localhost:3001/api/blogs
+
+###
+
+POST http://localhost:3001/api/blogs
+Content-Type: application/json
+
+{
+  "title": "OpenAI lays out its for-profit transition plans",
+  "author": "Kyle Wiggers",
+  "url": "https://techcrunch.com/2024/12/27/openai-lays-out-its-for-profit-transition-plans/",
+  "likes": 0
+}
