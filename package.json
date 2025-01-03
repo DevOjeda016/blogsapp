@@ -1,5 +1,5 @@
 {
-  "name": "blogsapp",
+  "name": "back-blogsapp",
   "version": "1.0.0",
   "description": "List of blogs from internet",
   "main": "index.js",
