@@ -1,5 +1,6 @@
 const config = require('./utils/config')
 const express = require('express')
+require('express-async-errors')
 const app = express()
 const cors = require('cors')
 const mongoose = require('mongoose')
@@ -14,10 +15,10 @@ mongoose.set('strictQuery', false)
 
 mongoose.connect(config.MONGO_DB)
   .then(() => {
-    console.log('connected to MongoDB')
+    logger.info('connected to MongoDB')
   })
   .catch(error => {
-    console.log('connection to MongoDB failed', error.message)
+    logger.error('connection to MongoDB failed', error.message)
   })
 
 app.use(cors())

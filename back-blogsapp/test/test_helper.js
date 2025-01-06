@@ -46,13 +46,22 @@ const initialBlogs = [
 ]
 
 const nonExistingId = async () => {
-  const blog = new Blog({ content: 'willremovethissoon' })
+  const blog = new Blog({
+    title: 'OpenAI lays out its for-profit transition plans',
+    author: 'Kyle Wiggers',
+    url: 'https://techcrunch.com/2024/12/27/openai-lays-out-its-for-profit-transition-plans/',
+    likes: 0
+  })
   await blog.save()
-  await blog.remove()
+  await blog.deleteOne()
 
   return blog._id.toString()
 }
 
+const hasIdProperty = (blogs) => {
+  return blogs.every(blog => blog.hasOwnProperty('id'))
+}
+
 module.exports = {
-  initialBlogs, nonExistingId
+  initialBlogs, nonExistingId, hasIdProperty
 }
