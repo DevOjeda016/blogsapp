@@ -6,6 +6,7 @@ const cors = require('cors')
 const mongoose = require('mongoose')
 const logger = require('./utils/logger')
 const blogsRouter = require('./controllers/blogs')
+const usersRouter = require('./controllers/users')
 const middleware = require('./utils/middleware')
 
 
@@ -33,6 +34,7 @@ app.get('/', (request, response) => {
 })
 
 app.use('/api/blogs', blogsRouter)
+app.use('/api/users', usersRouter)
 
 app.use(middleware.unknowEndpoint)
 app.use(middleware.errorHandler)

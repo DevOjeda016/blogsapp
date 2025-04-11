@@ -1,0 +1,12 @@
+### GET: All notes
+GET http://localhost:3001/api/users
+
+### POST: Save new user
+POST http://localhost:3001/api/users
+Content-Type: application/json
+
+{
+  "username": "mluukkai",
+  "name": "Matti Luukkainen",
+  "password": "salainen"
+}
