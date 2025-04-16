@@ -1,4 +1,4 @@
-### GET: All notes
+### GET: All users
 GET http://localhost:3001/api/users
 
 ### POST: Save new user

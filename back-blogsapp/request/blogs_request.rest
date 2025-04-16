@@ -4,10 +4,16 @@ GET http://localhost:3001/api/blogs
 
 POST http://localhost:3001/api/blogs
 Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im1sdXVra2FpIiwiaWQiOiI2NzgyZmVkODRiYjJmNGYxZDI3NDM3YjMiLCJpYXQiOjE3NDQ3NjkxNDN9.vgcHA2itPWMqWH3zecteZK8FM-m7cDeBuMPHbaatX-o
 
 {
-  "title": "OpenAI lays out its for-profit transition plans",
+  "title": "OpenA lays out its for-profit transition plans",
   "author": "Kyle Wiggers",
   "url": "https://techcrunch.com/2024/12/27/openai-lays-out-its-for-profit-transition-plans/",
-  "likes": 0
+  "likes": 0,
+  "userId": "6782fecf4bb2f4f1d27437b1"
 }
+
+###
+DELETE http://localhost:3001/api/blogs/67ff2e0a7ab5422980157cfb
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im1sdXVra2FpIiwiaWQiOiI2NzgyZmVkODRiYjJmNGYxZDI3NDM3YjMiLCJpYXQiOjE3NDQ3NjkxNDN9.vgcHA2itPWMqWH3zecteZK8FM-m7cDeBuMPHbaatX-o
