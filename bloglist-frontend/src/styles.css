@@ -1,0 +1,31 @@
+.notification {
+  width: 100;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.error {
+  border: 5px solid red;
+  color: red;
+  background-color: antiquewhite;
+}
+
+.success {
+  border: 5px solid green;
+  color: green;
+  background-color: rgb(199, 247, 199);
+}
+
+.info {
+  border: 5px solid blue;
+  color: blue;
+  background-color: rgb(218, 244, 253);
+}
+
+.warning {
+  border: 5px solid rgb(180, 180, 16);
+  color: rgb(180, 180, 16);
+  background-color: lightgoldenrodyellow;
+}
